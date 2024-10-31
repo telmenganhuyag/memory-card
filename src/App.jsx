@@ -48,17 +48,17 @@ export default function App() {
 
   return (
     <div className="container mx-auto p-4 bg-base-200 min-h-screen">
-      <h1 className="text-4xl font-bold text-center mb-8 text-primary">
+      <h1 className="text-4xl font-bold text-center mb-8">
         Memory Card Game
       </h1>
 
-      <div className="flex justify-between mb-4">
-        <div className="stat bg-primary text-primary-content rounded-box">
-          <div className="stat-title">Current Score</div>
+      <div className="flex justify-evenly mb-5">
+        <div className="stat flex flex-col items-center bg-primary text-primary-content rounded-box w-1/3">
+          <div className="stat-title text-primary-content font-semibold">Current Score</div>
           <div className="stat-value">{currentScore}</div>
         </div>
-        <div className="stat bg-secondary text-secondary-content rounded-box">
-          <div className="stat-title">Best Score</div>
+        <div className="stat flex flex-col items-center bg-secondary text-secondary-content rounded-box w-1/3">
+          <div className="stat-title text-secondary-content font-semibold">Best Score</div>
           <div className="stat-value">{bestScore}</div>
         </div>
       </div>
